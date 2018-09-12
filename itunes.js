@@ -6,7 +6,7 @@ $("form").submit(function (event) { // grab the form
     event.preventDefault(); // prevent page reload 
     var input = $("input").val(); // grab the value from search. set the variable to input in order to reference it later 
     $.ajax({
-        url: `http://itunes.apple.com/search?term=${input}`, // tick mark is template string 
+        url: `https://itunes.apple.com/search?term=${input}`, // tick mark is template string 
         dataType: 'JSONP'
     })
         .done(function (data) {
